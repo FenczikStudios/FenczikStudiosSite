@@ -23,7 +23,7 @@ header {
 }
 
 #logo {
-    background-image: url(./ArtAssets/__MainLogo.svg);
+    background-image: url(./ArtAssets/MainLogo.svg);
     background-size: 100%;
     position: absolute;
     top: 25px;
@@ -90,7 +90,7 @@ header nav button {
 }
 .dividing-line {
     position: relative;
-    background-image: url(./ArtAssets/__Line.png);
+    background-image: url(./ArtAssets/Line.png);
     background-size: cover;
     height: 5px;
     width: 1341px;
@@ -186,7 +186,7 @@ header nav button {
 
 .card-popup-dividing-line {
     position: relative;
-    background-image: url(./ArtAssets/__Line.png);
+    background-image: url(./ArtAssets/Line.png);
     background-size: cover;
     height: 4px;
     width: 1000px;
@@ -273,7 +273,7 @@ header nav button {
     transform: translate(0%, -100%);
 }
 #speechbubble {
-    background-image: url(./ArtAssets/__SpeechBubble.svg);
+    background-image: url(./ArtAssets/SpeechBubble.svg);
     background-size: 100%;
     position: relative;
     height: 398px;
@@ -352,7 +352,7 @@ header nav button {
     font-size: 16px;
 }
 #email-list-button {
-    background-image: url(./ArtAssets/__EmailListButton.svg);
+    background-image: url(./ArtAssets/EmailListButton.svg);
     background-size: 100%;
     display: flex;
     position: relative;
@@ -416,7 +416,7 @@ header nav button {
 #thanks-container {
     display: flex;
     position: relative;
-    background-image: url(./ArtAssets/__ThanksForComing.svg);
+    background-image: url(./ArtAssets/ThanksForComing.svg);
     background-size: 100%;
     height: 200px;
     width: 1114px;
