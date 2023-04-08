@@ -28,7 +28,7 @@ header {
     left: 50%;
     height: 250px;
     width: 1125px;
-    background-image: url(./ArtAssets/__MainLogo.svg);
+    background-image: url(FenczikStudiosSite/ArtAssets/__MainLogo.svg);
     z-index: 0;
     transform: translate(-50%, 0%);
 }
