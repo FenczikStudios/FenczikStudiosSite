@@ -98,6 +98,13 @@ for (let i = 0; i < buttons.length; i++) {
 //-------------------------------------------------------------------------//
 // Email List Button:
 
+
+//MAIL CHIMP:
+function showEmailListForm () {
+  document.getElementById("email-list-form-container").style.display = "block";
+}
+
+
 // create a Lottie animation
 const animationContainer = document.getElementById('email-list-button');
 const animation = lottie.loadAnimation({
@@ -115,18 +122,6 @@ animationContainer.addEventListener('mouseenter', () => {
 
 animationContainer.addEventListener('click', () => {
   animation.playSegments([17,32], true);
-});
-
-
-
-//MAIL CHIMP:
-function showEmailListForm () {
-  if (document.getElementById("email-list-button").clicked) {
-    document.getElementById("email-list-form-container").style.display = "block";
-  }
-}
-
-document.getElementById("email-list-button").addEventListener("click",function() {
   showEmailListForm();
 });
 
