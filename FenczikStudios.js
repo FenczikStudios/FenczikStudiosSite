@@ -35,6 +35,7 @@ menuLinks.forEach(link => {
 //-------------------------------------------------------------------------//
 //About Me Section:
 
+//Click a question, Get an Answer
 const outputDiv = document.getElementById('response');
 const txt1 = `Sure! I have been a designer for over a decade. An animator for 4 years and a developer 
               for about a year! Learning new things and making art is my passion!`;
@@ -67,6 +68,56 @@ for (let i = 1; i <= 4; i++) {
     }, 40);
   });
 }
+
+
+//button hover, mousedown/up states and move
+const buttons = document.getElementsByClassName('buttons');
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('mouseenter', () => {
+    buttons[i].style.backgroundColor = '#0d6d93';
+  });
+  
+  buttons[i].addEventListener('mouseleave', () => {
+    buttons[i].style.backgroundColor = '#085c7e';
+  });
+  
+  buttons[i].addEventListener('mousedown', () => {
+    buttons[i].style.backgroundColor = '#044c68';
+  });
+
+  buttons[i].addEventListener('mouseup', () => {
+    buttons[i].style.backgroundColor = '#085c7e';
+  });
+}
+
+//avatar animations
+
+
+
+//-------------------------------------------------------------------------//
+// Email List Button:
+
+// create a Lottie animation
+const animationContainer = document.getElementById('email-list-button');
+const animation = lottie.loadAnimation({
+  container: animationContainer,
+  renderer: 'svg',
+  loop: false,
+  autoplay: false,
+  path: './ArtAssets/EmailListButtonAnimations.json' // change to your animation file name
+});
+
+
+animationContainer.addEventListener('mouseenter', () => {
+  animation.playSegments([0, 16], true);
+});
+
+animationContainer.addEventListener('click', () => {
+  animation.playSegments([17,32], true);
+});
+
+
 //-------------------------------------------------------------------------//
 // Cards:
 
@@ -105,10 +156,18 @@ const closePopup = (popupId) => {
 cardIds.forEach((cardId, index) => {
   const card = document.getElementById(cardId);
   const popupId = popupIds[index];
+
+  card.addEventListener('mouseenter', () => {
+    card.style.top = '-5px';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.top = '25px';
+  });
   card.addEventListener('click', () => {
     openPopup(popupId);
   });
 });
+
 
 //-------------------------------------------------------------------------//
 // Popup-gallery:

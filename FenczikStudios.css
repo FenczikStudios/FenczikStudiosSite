@@ -5,6 +5,10 @@ html {
     font-family: "segoePrBold";
     src: url(./ArtAssets/fonts/segoeprb.ttf);
 }
+@font-face {
+    font-family: "OpenSans";
+    src: url(./ArtAssets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
 
 body {
     background-color:#0d6e95;
@@ -82,7 +86,7 @@ header nav button {
 .strip-header {
     position: relative;
     top: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: OpenSans;
     font-size: 50pt;
     color: #ffffff;
     text-align: center;
@@ -90,7 +94,7 @@ header nav button {
 }
 .dividing-line {
     position: relative;
-    background-image: url(./ArtAssets/Line.png);
+    background-image: url(./ArtAssets/Line.svg);
     background-size: cover;
     height: 5px;
     width: 1341px;
@@ -144,6 +148,8 @@ header nav button {
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    max-width: 330px;
+    min-width: 330px;
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -157,6 +163,7 @@ header nav button {
     transform: translate(-50%, -50%);
     height: 1000px;
     width: 1200px;
+    border-radius: 15px;
     background-color: #187497;
     padding: 20px;
     z-index: 5;
@@ -352,7 +359,6 @@ header nav button {
     font-size: 16px;
 }
 #email-list-button {
-    background-image: url(./ArtAssets/EmailListButton.svg);
     background-size: 100%;
     display: flex;
     position: relative;
