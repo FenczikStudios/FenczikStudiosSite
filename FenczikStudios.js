@@ -118,6 +118,19 @@ animationContainer.addEventListener('click', () => {
 });
 
 
+
+//MAIL CHIMP:
+function showEmailListForm () {
+  if (document.getElementById("email-list-button").clicked) {
+    document.getElementById("email-list-form-container").style.display = "block";
+  }
+}
+
+document.getElementById("email-list-button").addEventListener("click",function() {
+  showEmailListForm();
+});
+
+
 //-------------------------------------------------------------------------//
 // Cards:
 
