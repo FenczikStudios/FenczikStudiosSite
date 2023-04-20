@@ -91,6 +91,7 @@ header {
         height: 65px;
         width: 95%;
         top: 90px;
+        z-index: 5;
     }
   }
   @media (max-width: 428px) {
