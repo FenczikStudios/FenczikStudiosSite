@@ -18,10 +18,6 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-@media (max-width: 428px) {
-    body {
-    }
-  }
 header {
     background-image: url(./ArtAssets/Banner.png);
     background-size: cover;
@@ -442,7 +438,7 @@ header nav button {
     #aboutMe-strip img {
         width: 100%;
         top: 100%;
-        left: 0%;
+        left: 50%;
     }
   }
   #about-me-container {
@@ -454,6 +450,13 @@ header nav button {
     z-index: 0;
     transform: translate(-50%, 0%);
     z-index: 4;
+  }
+  @media (max-width: 428px) {
+    #about-me-container {
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
   }
 #speechbubble {
     position: relative;
@@ -468,11 +471,10 @@ header nav button {
 }
 @media (max-width: 428px) {
     #speechbubble {
-        background-color: #ffffff;
-        top: -85%;
-        left: -5%;
-        height: 140px;
-        width: 280px;
+        top: 200px;
+        left: 20px;
+        height: 170px;
+        width: 300px;
     }
   }
 #response-container {
@@ -482,8 +484,6 @@ header nav button {
 }
 @media (max-width: 428px) {
     #response-container {
-        display: absolute;
-        margin-top: 64%;
     }
   }
 .response {
@@ -500,6 +500,7 @@ header nav button {
         display: block;
         font-size: 12px;
         max-width: 260px;
+        height: 160px;
     }
   }
 #button-container {
@@ -514,12 +515,13 @@ header nav button {
 }
 @media (max-width: 428px) {
     #button-container {
+        position: absolute;
         display: flex;
         flex-wrap: wrap;
-        top: -78%;
-        left: -20%;
+        left: 20px;
+        top: 380px;
         width: 50%;
-        height: 0%;
+        height: 100px;
         justify-content: center;
         z-index: 4;
     }

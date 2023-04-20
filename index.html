@@ -385,7 +385,12 @@
         </div>
     </div>
 
-
+    <script>
+        window.addEventListener("orientationchange", function() {
+          // Lock the screen orientation to portrait mode
+          screen.orientation.lock("portrait");
+        });
+      </script>
 </body>
 
 
