@@ -433,10 +433,10 @@ header nav button {
 #aboutMe-strip img {
     position: relative;
     top: 100%;
-    width: 69%;
-    left: 15%;
+    width: 850px;
+    left: 50%;
     z-index: 0;
-    transform: translate(0%, -100%);
+    transform: translate(-50%, -100%);
 }
 @media (max-width: 428px) {
     #aboutMe-strip img {
@@ -444,6 +444,16 @@ header nav button {
         top: 100%;
         left: 0%;
     }
+  }
+  #about-me-container {
+    position: absolute;
+    top: 300px;
+    width: 850px;
+    height: 875px;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, 0%);
+    z-index: 4;
   }
 #speechbubble {
     position: relative;
@@ -453,8 +463,8 @@ header nav button {
     height: 398px;
     width: 618px;
     border-radius: 25px;
-    top: -96%;
-    left: 21%
+    top: 50px;
+    left: 65px;
 }
 @media (max-width: 428px) {
     #speechbubble {
@@ -483,7 +493,7 @@ header nav button {
     font-size: 24px;
     color: black;
     text-align: center;
-    max-width: 650px;
+    max-width: 600px;
 }
 @media (max-width: 428px) {
     .response {
@@ -494,11 +504,11 @@ header nav button {
   }
 #button-container {
     display: block;
-    position: relative;
-    top:-90%;
-    left: 30%;
-    width: 20%;
-    height: 40%;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    width: 0px;
+    height: 300px;
     justify-content: center;
     z-index: 4;
 }
@@ -518,8 +528,8 @@ header nav button {
     display: flex;
     cursor: pointer;
     position: static;
-    height: 85px;
-    width: 400px;
+    height: 75px;
+    width: 300px;
     margin-top: 15px;
     background-color: #085c7e;
     border: 2px solid #ffffff;
