@@ -40,7 +40,7 @@ const outputDiv = document.getElementById('response');
 const txt1 = `Sure! I have been a designer for over a decade. An animator for 4 years and a developer 
               for about a year! Learning new things and making art is my passion!`;
 const txt2 = `Simply put, Fenczik Studios is me! Everything you see on this site was created by yours 
-              truely. From concept to design to development and everything in between!`;
+              truly. From concept to design to development and everything in between!`;
 const txt3 = `Great question! The best way to contact me is via email: steven@fenczikstudios.com or 
               Instagram DM @fenczikstudios.com`;
 const txt4 = `If you have any additional questions send me a message and let's talk shop!
