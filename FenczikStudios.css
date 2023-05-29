@@ -618,11 +618,6 @@ header nav button {
   background-color: #085c7e;
 }
 
-@media (max-width: 428px) {
-  #reel-strip {
-      height: 70%;
-  }
-}
 
 #animation-reel-strip-contents {
   height: 80%;
@@ -633,12 +628,20 @@ header nav button {
 
 #reel-container {
   display:flex;
-  height: 70%;
-  width: 70%;
+  height: 450px;
+  width: 800px;
   align-items: center;
   justify-content: center;
 }
 
+@media (max-width: 428px) {
+  #reel-container {
+    padding-bottom: 10%;
+    width: 350px;
+    height: 197px;
+
+  }
+}
 #reel-container iframe {
   height: 100%;
   width: 100%;
