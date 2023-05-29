@@ -612,6 +612,34 @@ header nav button {
   }
 
 /* ------------------------------------------------------------------------------------------- */
+/* Reel Section */
+
+#reel-strip {
+  background-color: #085c7e;
+}
+
+#animation-reel-strip-contents {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reel-container {
+  display:flex;
+  height: 70%;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+#reel-container iframe {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
 /* Animation Section */
 
 
