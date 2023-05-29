@@ -618,6 +618,12 @@ header nav button {
   background-color: #085c7e;
 }
 
+@media (max-width: 428px) {
+  #reel-strip {
+      height: 70%;
+  }
+}
+
 #animation-reel-strip-contents {
   height: 80%;
   display: flex;
