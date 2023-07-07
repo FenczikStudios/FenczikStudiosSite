@@ -566,21 +566,21 @@ width: 75%;
 
 
 #card-1 {
-  background-image: url(./ArtAssets/Cards/Card11.png);
+  background-image: url(./ArtAssets/Cards/card11.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #card-2 {
-  background-image: url(./ArtAssets/Cards/Card12.png);
+  background-image: url(./ArtAssets/Cards/card12.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #card-3 {
-  background-image: url(./ArtAssets/Cards/Card13.png);
+  background-image: url(./ArtAssets/Cards/card13.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
