@@ -7,13 +7,11 @@
     font-family: "OpenSans";
     src: url(./ArtAssets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
-
 /*
 * {
   outline: 1px red solid;
 }
 */
-
 body {
     background-color:whitesmoke;
     margin: 0;
@@ -33,7 +31,6 @@ header {
       min-height: 175px;
     }
   }
-
 #logo {
     background-image: url(./ArtAssets/header.svg);
     background-size: contain;
