@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenczik Studios Merch</title>
+    <link rel="stylesheet" href="FenczikStudios.css">
+
+</head>
+
+<body>
+
+<!---------------------------------- Header --------------------------------------->
+
+<header>
+    <img id="logo" src="./ArtAssets/logo clean.svg"></img>
+    <div id="title-container">
+        <img id="header-title" src="./ArtAssets/merch header title.png" alt="fenczik studios header title">
+    </div>
+    <div id="menu-icon-container">
+        <img id="menu-icon" src="./ArtAssets/menu icon.svg" alt="menu icon">
+        <div id="menu-container">
+            <nav id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="merch.html">Merch</a></li>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<!-----------------------------------------------STORE----------------------------------------------->
+
+<section id="store-strip">
+
+<div style="max-width: 1040px; margin: 0 auto;"> <div> <a class="anchor" id="fitPrintAnchor" style="padding-top: 0px; margin-top: 0px;"></a> <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script> <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script type="text/javascript"> iFrameResize( { log: false, checkOrigin: false, heightCalculationMethod: 'grow', autoResize: false, onMessage: function(messageData) { var jsonData = JSON.parse(messageData.message); if (jsonData.action == 'navigateTo') { window.onbeforeunload = null; window.parent.location.href= jsonData.data; } if (jsonData.action == 'scrollTo') { setTimeout(function () { document.getElementById('fitPrintAnchor').scrollIntoView({behavior: 'smooth', block: 'center'}); },200); } }, onInit: function(iframe) { $(document).ready(function() { iframe.iFrameResizer = { $(window).on('scroll', () => { const scrollFromTop = $(document).scrollTop(); var fitPrintIframe = $("#fitPrintIframe"); var offset = fitPrintIframe.offset(); if (scrollFromTop > offset.top + 10) { iframe.iFrameResizer.sendMessage(scrollFromTop - (offset.top - 10)); } }); }); } }, '#fitPrintIframe'); </script> <br> <iframe id="fitPrintIframe" frameborder="0" scrolling="no" src="https://shop.fitprint.io/v2.html?shop=74483b93-ba89-4cf8-8fe8-631dee231442" width="100%" onload="iFrameResize({ log: false, checkOrigin: false, heightCalculationMethod: 'grow', autoResize: false, onMessage: function(messageData) {var jsonData = JSON.parse(messageData.message);if (jsonData.action == 'navigateTo') {window.onbeforeunload = null;window.parent.location.href= jsonData.data;}if (jsonData.action == 'scrollTo') {setTimeout(function () {document.getElementById('fitPrintAnchor').scrollIntoView({behavior: 'smooth', block: 'center'});},200);}},onInit: function(iframe) { $(document).ready(function () { $(window).on('scroll', () => { const scrollFromTop = $(document).scrollTop(); var fitPrintIframe = $('#fitPrintIframe'); var offset = fitPrintIframe.offset(); if (scrollFromTop > offset.top + 10) { iframe.iFrameResizer.sendMessage(scrollFromTop - (offset.top - 10)); }if (scrollFromTop == 0 ) { iframe.iFrameResizer.sendMessage(scrollFromTop); } }); }); }}, '#fitPrintIframe');"></iframe> <style> iframe { width: 1px; min-width: 100%; } </style> </div> </div></section>
+
+
+<!-----------------------------------------------Footer----------------------------------------------->
+
+    <div id="footer-strip" class = "footer">
+        <div id="thanks-container">
+            <img src="./ArtAssets/ThanksForVisiting.png" alt=" thanks for visiting fenczik studios">
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="./ArtAssets/lottie.js"></script>
+<script src="./FenczikStudios.js" id="graphic1"></script>
+</html>
+

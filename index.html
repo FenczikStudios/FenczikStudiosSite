@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fenczikstudios</title>
+    <title>Fenczik Studios</title>
     <link rel="stylesheet" href="FenczikStudios.css">
 
 </head>
@@ -14,240 +14,112 @@
 <!---------------------------------- Header --------------------------------------->
 
     <header>
-        <div id="logo"></div>
+        <img id="logo" src="./ArtAssets/logo clean.svg"></img>
+        <div id="title-container">
+            <img id="header-title" src="./ArtAssets/FenczikStudio header title.png" alt="fenczik studios header title">
+        </div>
+        <div id="menu-icon-container">
+            <img id="menu-icon" src="./ArtAssets/menu icon.svg" alt="menu icon">
+            <div id="menu-container">
+                <nav id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="merch.html">Merch</a></li>
+                </nav>
+            </div>
+        </div>
     </header>
 
 
-<!---------------------------------- About Me ------------------------------------------->
 
-<section id="aboutme-strip" class = "strip">
-    <div class="dividing-line" id="line1"></div>
-    <div id="aboutme-container">
-        <div id="profile-pic-container">
+
+<!---------------------------------- Landing Strip Section --------------------------------------->
+
+<section id="landing-strip" class = "strip">
+        <div id="landing-intro">
+            <img id="welcome-header" src="./ArtAssets/Welcome header.png" alt="">
+            <p>Where Imagination Meets Artistry: <br>
+            Custom Designs, Illustrations, and Animations</p>
         </div>
-        <h3 id="aboutme-h3">
-            Artist | Animator | Designer | Developer
-        </h3>
-    <img id="software-icons" src="./ArtAssets/SoftwareIcons.svg"></img>
-        <p id="aboutme-p">
-            Steven Fenczik is a freelance artist and animator with experience working in both
-            2D and 3D environments and workflows. He graduated from The University of Colorado Boulder in 2016 with a 
-            degree in Studio Art. Over the last decade, he has created a wide variety of digital and print
-            assets from logos and box designs to animated commercials and motion graphics. 
-            This site, as well as everything you see on it was created by Steven.
+    <div class="landing-container">
+        <img src="./ArtAssets/landing graphic-12.png" alt="">
+        <div id="landing-container-empty"></div>
+        <p>
+            Meaningful purpose driven brand solutions to encapsulate the essence of your brand, its values, and its unique story.
         </p>
-        <div id="about-me-empty-box"></div>
-        <p id="aboutme-p">Thanks for visiting FenczikStudios.com!</p>
     </div>
-</section>
-
-<!---------------------------------- Reel Section --------------------------------------->
-
-<section id="reel-strip" class = "strip">
-    <h1>2D Animation Reel</h1>
-        <div class="reel-container">
-            <video src="./ArtAssets/2DReelJuly2023.mp4" controls></video>
-        </div>
-    <h1>3D Animation Reel</h1>
-        <div class="reel-container">
-            <video src="./ArtAssets/3DReel.mp4" controls></video>
-        </div>
-        <div class="dividing-line" id="line2"></div>
-</section>
-
-
-
-<!---------------------------------- Guitarbacus ------------------------------------------->
-
-<section id="guitarbacus-strip" class = "strip">
-    <div id="guitarbacus-container">
-    <img id="guitarbacus-logo" src="./ArtAssets/guitarbacus/Logo.png"></img>
-        <p id="guitarbacus-p">
-            Guitarbacus.com is a guitar-learning application I am developing for web and mobile devices. The goal of 
-            guitarbacus.com is to provide a unique way of learning guitar and music generally with an emphasis on improvisation and 
-            creative expression. The main page of the site allows users to select any key and musical mode they like and 
-            see the scale appear immediately on the guitarneck. For beginners, I have written guides inside the app to help introduce
-            all the necessary information required to start making music like a pro!
-            <br><br>
-            The site is still under construction, however I would love to hear your thoughts!
-            Feel free to spend some time with the guitarbacus, then send me a message <br> telling me all about your experience!  
+    <div class="landing-container">
+        <img src="./ArtAssets/landing graphic-13.png" alt="">
+        <div id="landing-container-empty"></div>
+        <p>
+            Versatile illustrations that blend commercial appeal and artistic beauty, 
+            suitable for promotional materials and wall decor alike.       
         </p>
-        <img id="guitarbacus-gif" src="./ArtAssets/Development/GuitarbacusGif1.gif"></img>
-        <p id="aboutme-p"><button onclick="window.location = 'https://www.guitarbacus.com/index.html'">Click Here</button> to visit guitarbacus.com! 
+    </div>
+    <div class="landing-container">
+        <img src="./ArtAssets/landing graphic-11.png" alt="">
+        <div id="landing-container-empty"></div>
+        <p>
+            Engage your audience with inspiring animations and dynamic motion graphics.
         </p>
     </div>
 </section>
 
-<!----------------------------------Email List (Thin-Strip) Section---------------------------------------->
 
-    <div class="thin-strip">
-        <div id="email-list-header">
-            <h1>Join the email list for updates on all things Fenczik Sudios!</h1>
-        </div>
-        <div id="email-list-button"></div>
-        <div id="email-list-form-container" style="display:none" ></div>
+<!----------------------------------Continue to Portfolio---------------------------------------->
+
+<div class="thin-strip" id="continue-strip">
+    <div class="continue-button" id="continue-to-portfolio-button">
+        <img src="./ArtAssets/continue-portfolio.png" alt="">
     </div>
-
-<!----------------------------------More Projects Section---------------------------------------->
-
-    <section id="more-projects-strip" class = "strip">
-        <div id="strip-header">More Projects</div>
-
-        <div class="card-container"> 
-
-            <div id="card-1" class="card">
-            </div>
-
-            <div id="card-2" class="card">
-            </div>
-
-            <div id="card-3" class="card">
-            </div>
-            
-        </div>
-    </section>
-
-    <!------------------------------- Popups --------------------------------->
-
-    <div class="card-popup" id="popup-1">
-        <div class="card-popup-header">Coding & Development</div>
-        <Div class="card-popup-dividing-line"></Div>
-        <img src="./ArtAssets/Arrows-05.svg" alt="arrow-left" class="arrow-left" id="arrowLeft">
-        <div class="popup-gallery">
-            <img id="hippo" class="active" src="./ArtAssets/Animation/ShotgunHippo.gif"  height="auto" width="100%">
-            <img id="spineguy" src="./ArtAssets/Animation/MC_For Website.gif"  height="auto" width="100%">
-            <img id="img1" src="./ArtAssets/Development/GuitarbacusGif1.gif"  height="auto" width="100%">
-            <img id="img3" src="./ArtAssets/Development/PuzzlePlatformerGif1.gif"  height="auto" width="100%">
-            <img id="img4" src="./ArtAssets/Development/PuzzlePlatformerGif2.gif"  height="auto" width="100%">
-
-        </div>
-        <img src="./ArtAssets/Arrows-04.svg" alt="arrow-right" class="arrow-right" id="arrowRight">
-        <div id="popup-gallery-description">            
-            <p class="active">This Shotgun wielding Hippo was created using Spine2d animation software. This character is 
-                game ready with all of the basic game animations: Run, Jump, Shoot etc.</p>
-            <p>Here is another character created using Spine2d. This character is still in development. The 
-                idea for this character is to be game ready with the potential for different skins. He has his basic 
-                animations however the skins are still in development.</p>
-            <p>The Guitarbacus is an innovative new Guitar learning application 
-                in development for web and mobile devices. The Guitarbacus acts as a skeleton key
-                for the guitar and it's an idea that is very close to my heart.
-                I have always dreamed of creating a simple tool that allows musicians to learn the guitar, music theory
-                and improvisation in a new intuitive way. The Guitarbacus is designed to maximize creativity.
-                And I truely believe it does just that!</p>
-            <p>I am currently working on a puzzle platformer games in my spare time. You play as 
-                Theo Jazzman, a horn player who was mysteriously magiced away to an abstract world of jazz and music.
-                This character was created in photoshop and animated in Spine2d.</p>
-            <p>Theo Jazzman's Quest, as I am currently calling it, is a game that does not hold your hand. 
-                the player must explore and interact with the world in order to progress through the game and unravel 
-                the mysteries of the Jazziverse!</p>
-
-        </div>
+    <div class="continue-button" id="continue-to-merch-button">
+        <img src="./ArtAssets/continue-merch.png" alt="">
     </div>
-
-    <div class="card-popup" id="popup-2">
-        <div class="card-popup-header">Design</div>
-        <Div class="card-popup-dividing-line"></Div>
-        <img src="./ArtAssets/Arrows-05.svg" alt="arrow-left" class="arrow-left" id="arrowLeft">
-        <div class="popup-gallery">
-            <img id="img5" class="active" src="./ArtAssets/Design/mindful moose_v3.png" alt="MindfulMoose" height="auto" width="700px">
-            <img id="img8" src="./ArtAssets/Design/smitty custom cues.png" alt="smitty custom cue" height="auto" width="850px"> 
-            <img id="img7" src="./ArtAssets/Design/hero sword.jpg" alt="HeroSwordBox" height="auto" width="700px">
-            <img id="img1" src="./ArtAssets/Design/Next Toys-01.png" alt="Next Toys" width="700px">
-            <img id="img2" src="./ArtAssets/Design/RealRadicalFlight.png" alt="RRF" height="auto" width="700px">
-            <img id="img3" src="./ArtAssets/Design/KitCoTires.jpg" alt="KitCo" height="auto" width="750px">
-            <img id="img6" src="./ArtAssets/Design/AC Supply Logo_Main.png" alt="AC supply" height="auto" width="700px">
-            <img id="img4" src="./ArtAssets/Design/debbie dawson logo.jpg" alt="Debbie's Salon" height="auto" width="700px">
-        </div>
-        <img src="./ArtAssets/Arrows-04.svg" alt="arrow-right" class="arrow-right" id="arrowRight">
-        <div id="popup-gallery-description">
-            <p class="active">Mindful Moose Gardening is an awesome new gardening business based in Colorado Springs. They are the 
-                garden gurus and now they have an awesome logo to show off just how awesome they are!</p>
-            <p>Smitty custom cues are custom made pool cues created from only the finest materials.</p>
-            <p>Hero Sword is a toy created by Next Toys. I was tasked with creating an epic box design that inspires
-                the inner hero of every kid.</p>
-            <p>Next toys is a small toy manufacturing company located in Kowloon Bay, China. They tasked me 
-                with creating a logo and brand identity for their company.
-            </p>
-            <p>Real Radical Flight is the brain-child of Jeffrey Loeb. His idea: create amazingly fun toys that teach 
-                kids about aerodyamics. Real Radical Flight is NASA meets paper planes. Above is the design we decided upon.
-             </p>
-            <p>Unfortunately, KitCo Tires is not a real company. Instead, it is a tiny one-inch sticker designed as part of a set
-                of sponsorship decals for an RC car called Redneck Roadkill by Eclipse Toys. This logo was my favorite out of 
-                the bunch. You can find this and many other cool items created by yours truely inside the Redneck Roadkill box.  
-            </p>
-            <p>AC Supply is your one stop shop for all things model rocket related. AC supply was indesperate need of
-                of striking new logo to show off how cool their business is. Thats where I came in. This new logo is iconic
-                and conveys exactly what AC Supply is all about with just a glance.
-            </p>
-            <p>Debbie Dawson is an amazing hairstylist however, she lacked an eye-catching brand identity that matched 
-                her skill. This logo above was our solution. Intended for business cards, letter head and the like. This logo 
-                was also printed as a large vinyl sticker to be shown on the front window of her salon!
-            </p>
-        </div>
-    </div>
-
-    <div class="card-popup" id="popup-3">
-        <div class="card-popup-header">Illustration</div>
-        <Div class="card-popup-dividing-line"></Div>
-        <img src="./ArtAssets/Arrows-05.svg" alt="arrow-left" class="arrow-left" id="arrowLeft">
-        <div class="popup-gallery">
-            <img id="img0" class="active" src="./ArtAssets/Design/Bold and Brash_ForTshirt.png" alt="bold and brash" height="auto" width="700px">
-            <img id="img1" src="./ArtAssets/Design/SatChitananda.png" alt="Ganesh">
-            <img id="img2" src="./ArtAssets/Design/GojiraPosterFinSmall.jpg" alt="Gojira" width="575px">
-            <img id="img3" src="./ArtAssets/Design/streetwear chick - Color.png" alt="Streetwear Chick">
-            <img id="img4" src="./ArtAssets/Design/Sylized girl dancing_compressed.jpg" alt="Dancing Girl">
-            <img id="img5" src="./ArtAssets/Design/Swamp.jpg" alt="Swamp" width="900px">
-            <img id="img6" src="./ArtAssets/Design/wizard hut.jpg" alt="Wizard Hut">
-            <img id="img7" src="./ArtAssets/Design/GlamGirl.png" alt="Glam Girl">
-            <img id="img8" src="./ArtAssets/Design/ColoringBookPainting 1_Small.jpg" alt="Coloring Book Painting" width="600px">
-            <img id="img9" src="./ArtAssets/Design/girl robot monkey.png" alt="Girl Robot Monkey">
-            <img id="img10" src="./ArtAssets/Design/Sigh_White bkgrd.png" alt="Sigh">
-            <img id="img11" src="./ArtAssets/Design/Shepherd.png" alt="Shepherd">
-            <img id="img12" src="./ArtAssets/Design/Igris.png" alt="Luxodon" width="600px">
+</div>
 
 
-
-        </div>
-        <img src="./ArtAssets/Arrows-04.svg" alt="arrow-right" class="arrow-right" id="arrowRight">
-        <div id="popup-gallery-description">
-            <p class="active">This piece is a rendition of a work titled 'Bold and Brash' by the artist Squidward Tentacles.
-                This is a design created for the Fenczik Studios merch store. 
-                Get this design as a sticker or t-shirt today!</p>
-            <p>Ganesh aka Ganapati, lord of the Ganas, son of Shiva. Embodiment of Satchitananda.</p>
-            <p>I have always been a huge Godzilla fan ever since I was a kid, so when I was commissioned to create a badass Godzilla 
-                poster I couldn't wait to start! This poster was created entirely from scratch using photoshop.</p>
-            <p>This is a design on my shop. Get it on shirts, stickers and more! Created in Photoshop.</p>
-            <p>This is another design on my shop. Get it on shirts, stickers and more! Created in Fresco.</p>
-            <p>This painting was originally a background for a live animated character created with character animator.
-                This painting was created in Adobe Fresco.</p>
-            <p>This painting was created in Photoshop and is available on my redbubble shop!</p>
-            <p>This painting was created in Fresco and is available on my redbubble shop!</p>
-            <p>This painting was based on a page from one of my coloring books. Magic, Myths, and Monsters available on amazon!</p>
-            <p>This is a t-shirt design available on my redbubble. This design is one of my favorites!</p>
-            <p>This is a t-shirt design available on my redbubble. This design is one of my favorites!</p>
-            <p>A quick painting of a shepherd looking after his flock. I originally planned to color it but I liked the 
-                grey scale so much that I left it.</p>
-            <p>This piece was a commission for a DnD character. Iggy the Luxodon is a peacful
-                druid with a destructive side.</p>
-
-
-        </div>
-    </div>
-
-
+<!----------------------------------Email List Section---------------------------------------->
+<section class="strip" id="email-strip">
+    <div id="mc_embed_shell">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+          #mc_embed_signup{background:whitesmoke; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+      <form action="https://fenczikstudios.us14.list-manage.com/subscribe/post?u=aa26a1d185413f1f3a8b62e2b&amp;id=a1a0790e7f&amp;f_id=00e6a1e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <div id="mc_embed_signup_scroll"><h2>Subscribe to my Mailing List</h2>
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div><div class="mc-field-group"><label for="mce-BUSINESS">Business Name </label><input type="text" name="BUSINESS" class=" text" id="mce-BUSINESS" value=""></div>
+          <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+          </div>
+      <div aria-hidden="true" style="position: absolute; left: -5000px;">
+          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+          <input type="text" name="b_aa26a1d185413f1f3a8b62e2b_a1a0790e7f" tabindex="-1" value="">
+      </div>
+          <div class="optionalParent">
+              <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                  <p style="margin: 0px auto;"><a href="http://eepurl.com/ioGq7Q" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+              </div>
+          </div>
+      </div>
+  </form>
+  </div>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[6]='BUSINESS';ftypes[6]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+  
+</section>
 <!-----------------------------------------------Footer----------------------------------------------->
 
     <div id="footer-strip" class = "footer">
         <div id="thanks-container">
+            <img src="./ArtAssets/ThanksForVisiting.png" alt=" thanks for visiting fenczik studios">
         </div>
     </div>
 
-    <script>
-        window.addEventListener("orientationchange", function() {
-          // Lock the screen orientation to portrait mode
-          screen.orientation.lock("portrait");
-        });
-      </script>
 </body>
 
 
