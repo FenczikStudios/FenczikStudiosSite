@@ -70,7 +70,7 @@ continuePortfolio.addEventListener('click', function () {
 
 continueMerch.addEventListener('click', function () {
 
-  window.location.href = 'merch.html';
+  window.location.href = 'store.html';
 
 });
 
