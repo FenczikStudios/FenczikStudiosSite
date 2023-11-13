@@ -75,7 +75,8 @@ header {
 }
 @media (max-width: 428px) {
   #header-title {
-    height: 90px;
+    height: 92px;
+    margin-left: 25px;
   }
 }
 @media (min-width: 429px) and (max-width: 844px) {
