@@ -751,12 +751,12 @@ width: 75%;
 
 
 #store-strip {
-  position: static;
+  display: flex;
   width: 100%;
   min-height: 40vh;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 100px;
 }
-
