@@ -75,8 +75,8 @@ header {
 }
 @media (max-width: 428px) {
   #header-title {
-    height: 92px;
-    margin-left: 25px;
+    height: 72px;
+    margin-left: 0px;
   }
 }
 @media (min-width: 429px) and (max-width: 844px) {
@@ -768,12 +768,29 @@ width: 75%;
   height: 200px;
   width: 100%;
 }
+@media (max-width: 428px) {
+  .collection-header {
+    height: 60px;
+    margin-bottom: 25px;
+  }
+}
 .store-section-header {
   height: 100px;
 }
-
+@media (max-width: 428px) {
+  .store-section-header {
+    height: 60px;
+  }
+}
 #shirts {
   display: flex;
   width: 100%;
   height: 900px;
+}
+
+@media (max-width: 428px) {
+  #shirts {
+    height: auto;
+    margin-bottom: 25px;
+  }
 }
