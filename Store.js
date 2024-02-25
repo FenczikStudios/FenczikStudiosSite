@@ -59,3 +59,10 @@ collabHeaderOpen.addEventListener('click', function () {
 
   collabSection.style.display = 'none';
 });
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@
     src: url(./ArtAssets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
-/*
+
 * {
   outline: 1px red solid;
 }
@@ -50,7 +50,7 @@ p {
   background-position: center;
   background-size:cover;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     background-color: white;
@@ -76,7 +76,7 @@ p {
   }
 #logo {
     width: 150px;
-    margin: 0 5%;
+    margin: 0 2%;
 }
 @media (max-width: 844px) {
   #logo {
@@ -124,7 +124,7 @@ p {
   justify-content: center;
   width: 150px;
   height: 290px;
-  margin: 0 5%;
+  margin: 0 2%;
 }
 @media (max-width: 450px) {
   #menu-icon-container {
@@ -874,14 +874,16 @@ width: 75%;
 
 
 #store-header-title {
-  height: 150px;
+  display: flex;
+  width: 100%;
+  max-height: 130px;
 }
 @media (max-width: 450px) {
   #store-header-title {
     display: none;
   }
 }
-@media (min-width: 450px) and (max-width: 844px) {
+@media (min-width: 450px) and (max-width: 1000px) {
   #store-header-title {
     display: none;
   }
@@ -890,7 +892,7 @@ width: 75%;
 #store-header-title-mobile {
   display: none;
 }
-@media (min-width: 450px) and (max-width: 844px) {
+@media (min-width: 450px) and (max-width: 1000px) {
   #store-header-title-mobile {
     display: flex;
     height: 100px;
