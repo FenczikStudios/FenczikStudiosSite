@@ -21,26 +21,8 @@ shirtsHeaderOpen.addEventListener('click', function () {
   shirtsSection.style.display = 'none';
 });
 
-//stickers dropdown:
 
-var stickersHeaderClosed = document.getElementById('stickers-header-closed');
-var stickersHeaderOpen = document.getElementById('stickers-header-open');
-var stickersSection = document.getElementById('stickers');
-
-stickersHeaderClosed.addEventListener('click', function () {
-  stickersHeaderClosed.style.display = 'none';
-  stickersHeaderOpen.style.display = 'block';
-
-  stickersSection.style.display = 'flex';
-});
-stickersHeaderOpen.addEventListener('click', function () {
-  stickersHeaderOpen.style.display = 'none';
-  stickersHeaderClosed.style.display = 'block';
-
-  stickersSection.style.display = 'none';
-});
-
-//stickers dropdown:
+//Tanks dropdown:
 
 var tanksHeaderClosed = document.getElementById('tanks-header-closed');
 var tanksHeaderOpen = document.getElementById('tanks-header-open');
