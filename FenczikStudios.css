@@ -1165,3 +1165,61 @@ main {
   width: 100%;
   margin: 25px 0 50px 0;
 }
+
+/* ================================================================================================================== */
+/* HHF GALLERY */
+
+#hhf-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100vw;
+  background-color: #e3eaff;
+  margin: 100px 0 0 0;
+  box-shadow: 0px 0px 24px rgba(25, 27, 39, 0.6);
+}
+/*Mobile */
+@media only screen and (max-width: 767px) {
+  #hhf-banner {
+    height: 150px;
+    margin: 50px 0 0 0;
+  }
+}
+#hhf-logo {
+  display: flex;
+  position: relative;
+  height: 100%;
+  left: -100px;
+}
+/*Mobile */
+@media only screen and (max-width: 767px) {
+  #hhf-logo {
+    left: -60px;
+  }
+}
+#hhf-collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 25px 0 50px 0;
+}
+
+#donation-sticker {
+  display: flex;
+  position: relative;
+  height: 200px;
+  top: -130px;
+  left: 10px;
+  z-index: 1000;
+  transform: rotate(-5deg);
+}
+/*Mobile */
+@media only screen and (max-width: 767px) {
+  #donation-sticker {
+    height: 110px;
+    top: -65px;
+    left: 0px;
+  }
+}
