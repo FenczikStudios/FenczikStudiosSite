@@ -157,7 +157,7 @@ p {
 @media (max-width: 450px) {
   #menu-container {
     position: absolute;
-    right: 0;
+    right: -15px;
     top: 80px;
     z-index: 100;
   }
@@ -175,7 +175,7 @@ nav {
   list-style-type: none;
   text-align: center;
   background-color: white;
-  width: 150px;
+  width: 120px;
   margin-top: 5px;
 }
 nav li {
@@ -192,7 +192,8 @@ nav a {
   color: black;
   font-weight: bold;
   font-family: OpenSans;
-  font-size: 24px;
+  font-size: 20px;
+  margin: 2px;
 }
 
 nav a:hover {
@@ -1052,6 +1053,7 @@ main {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  
 }
 #collab-header {
   display: flex;
@@ -1063,6 +1065,7 @@ main {
 @media (max-width: 450px) {
   #collab-header {
     height: auto;
+    margin: 0 0 20px 0;
   }
 }
 #collab-header-open {
@@ -1076,11 +1079,16 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 20px;
+  margin: 5px;
+}
+@media (max-width: 450px) {
+  #collab-container {
+    flex-direction: column;
+  }
 }
 .collab-img {
   height: 250px;
-  margin: 20px;
+  margin: 10px;
 }
 @media (max-width: 450px) {
   .collab-img {
