@@ -1,0 +1,25 @@
+/*
+* {
+    border: 1px red solid;
+}
+*/
+body {
+    touch-action: pan-y;
+}
+.bg-img {
+    background-image: url(./Assets/imgs/abstractBG.png);
+    background-size: cover;
+}
+ #intro {
+    height: 50vh;
+    min-height: 600px;
+}
+@media (max-width: 768px) {
+    #intro {
+        height: 30vh;
+    }
+}
+.portfolio-container {
+    display: flex;
+    min-height: 500px;
+}
