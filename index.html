@@ -27,7 +27,7 @@
     
 <!--NAVBAR-->   
 
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar">
     <div class="container-xxl">
         <a href="./index.html" class="navbar-brand">
                 <img src="./Assets/icons/logoIcon.svg" alt="" class="img-fluid" style="height: 80px;">    
@@ -43,19 +43,10 @@
 
         <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
             <ul class="navbar-nav fs-5 text-end">
-                <li class="nav-item">
-                    <a href="./index.html#branding" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./index.html#about-me" class="nav-link">About</a>
-                </li>
                 <li class="nav-item " data-bs-toggle="modal" data-bs-target="#reg-modal">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a href="./portfolio2.html" class="nav-link">Art</a>
-                </li>
-                <li class="nav-item">
+                <li>
                     <a href="https://be8c3f-2.myshopify.com/" class="nav-link">Store</a>
                 </li>
             </ul>
@@ -68,52 +59,204 @@
 <!--END NAVBAR--> 
 
 
-<!--INTRO SECTION-->
 
-<section id="intro" class=" bg-primary">
+<!-- HERO SECTION -->
+<section id="hero" class="hero-section">
 
-    <div class="container-lg" style="height: 100%;">
-        <div class="row d-flex justify-content-center align-items-center" style="height: 100%;">
-            <div class="col-12 col-md-10 col-xl-8 pb-0 pb-sm-4 ">
-                <div class="d-flex row justify-content-center">
-                    <img class="img-fluid me-4" src="./Assets/imgs/PainterLogo.png"
-                     style="height: 300px; width: auto;" alt="">
+    <!-- VIDEO BACKGROUND -->
+    <video id="heroVideo" class="hero-video" autoplay muted loop playsinline>
+        <source src="./Assets/video/gradient2.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <div class="container-lg pt-0 pt-lg-4">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 pb-0 pb-sm-4">
+
+                <div class="py-5 "></div>
+                <div class="py-5"></div>
+                <div class="py-0 py-sm-5"></div>
+                <div class="d-flex justify-content-center pb-2">
+                    <img class="col-11" src="./Assets/imgs/HeroLogo.png" alt="">
                 </div>
-                <h1 class="text-center text-white mt-2">Welcome to</h1>
-                <h1 class="display-2 display-sm-1 text-white text-center fw-semibold">Fenczik Studios</h1>
+                <div class=""></div>
+
                 <div class="bg-white" style="height: 3px;"></div>
-                <div class="row">
-                    <p class="d-none d-sm-block fs-1 text-white text-center">Branding • Merch Design • Animation</p>
-                    <p class="d-block d-sm-none fs-5 text-white text-center">Branding • Merch Design • Animation</p>
+
+                <div class="row py-5">
+                    <p class="d-block display-6 display-sm-5 text-white text-center">
+                        I help businesses grow through consistent branding and content.
+                    </p>
                 </div>
+
+                <div class="row">
+                    <div class="d-none d-sm-flex justify-content-center">
+                        <p class="col-10 fs-3 text-white text-center py-3">
+                            From strategy to execution, I turn ideas into content that builds attention, trust, and long-term growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center gap-2 gap-sm-5 pb-5">
+                        <button class="btn btn-white btn-lg text-white fw-bold glass-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#reg-modal"
+                            style="background: rgba(0,0,0,0.15);
+                                   backdrop-filter: blur(6px);
+                                   -webkit-backdrop-filter: blur(6px);">
+                            Book a Free Strategy Call
+                        </button>
+
+                        <a href="#proof"
+                           class="btn btn-white btn-lg text-white fw-bold glass-btn me-0 me-sm-5"
+                           type="button"
+                           style="background: rgba(0,0,0,0.15);
+                                  backdrop-filter: blur(6px);
+                                  -webkit-backdrop-filter: blur(6px);">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+                <div class="py-0 py-sm-5"></div>
             </div>
         </div>
-    </div>  
-
+    </div>
 
 </section>
 
-<!--END INTRO SECTION-->
+<!-- END HERO SECTION-->
 
 
-<!--BRANDING SECTION-->
 
-<section id="branding" class=" p-3 p-lg-5">
+<section id="" class=" d-flex bg-grid align-items-center lift-topHero lift-bottom" style="min-height: 16vh;">
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <div class="col-12 ">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- SECTION 2 : Who is this for?-->
+<section id="section2" class="bg-gray border-bottom border-top border-gray2 border-4 py-5 ">
+
+    <div class="container-md d-flex flex-column" style="min-height: 50vh;">
+
+        <!-- TOP SPACER -->
+        <div class="flex-grow-1"></div>
+
+        <div class="row align-items-center justify-content-center gx-5">
+
+            <div class="col-7 col-lg-4 ">        
+                <img src="./Assets/imgs/social media growth.png" alt="" class="img-fluid pt-5 pt-lg-0" style="transform: translateY(-20px);">
+            </div>
+
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <p class="display-3 text-center text-lg-start pb-2">
+                    Built for businesses that grow through attention
+                </p>
+
+
+            </div>
+
+        </div>
+
+        <!-- MIDDLE SPACER -->
+        <div class="flex-grow-1"></div>
+
+        <div class="row justify-content-center g-4 pb-3">
+
+            <!-- Service-based Businesses -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Service-based Businesses
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Businesses that rely on trust and visibility to consistently bring in clients
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Coaches & Educators -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Coaches & Educators
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Creators and educators building an audience and sharing their expertise
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Local Brands -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Local Brands
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Local businesses looking to stand out and feel more established in their market
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Content-Driven Businesses -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Content-Driven Businesses
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Brands that need consistent content to stay relevant and visible online
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- END SECTION 2 : Who is this for?-->
+
+
+
+<!--SECTION 3 : THE PROBLEM-->
+
+<section id="section3" class=" d-flex bg-grid align-items-center lift-top lift-bottom pill-wrap" style="min-height: 55vh;">
 
     <div class="container-md">
 
-        <div class="row justify-content-center align-items-center" style="height: 100%;">
-            <div class="col-8 col-md-6 col-lg-4 text-center mx-3">
-                <img class="img-fluid" src="./Assets/imgs/branding.png" alt="">
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 text-center text-md-start mx-5">
-                <h1 class="display-4 fw-semibold text-primary">Branding</h1>
-                <p class="fs-5">Meaningful purpose driven brand solutions to encapsulate the essence of 
-                    your brand, its values, and its unique story. 
-                <br><br> Logos, Websites, Business Cards, Signage and More!</p>
-                <a href="./portfolio.html" class="btn btn-primary btn-lg text-white fw-semibold" type="button">
-                    See Our Work
-                </a>
+        <div class="row justify-content-center">
+
+            <div class="col-12 ">
+                <p class="display-6 text-center pill-glow">  
+                    Most businesses struggle with consistency.
+                    Content feels disconnected. Branding feels inconsistent.
+                    And it rarely turns into meaningful growth.
+                </p>
             </div>
 
         </div>
@@ -123,149 +266,747 @@
 </section>
 
 
-<!--END BRANDING SECTION-->
+<!--END SECTION 3 : THE PROBLEM-->
 
-<!--MERCH DESIGN SECTION-->
+<!-- SECTION 4 : THE SOLUTION -->
+<section id="section4" class="bg-gray border-bottom border-top border-gray2 border-4 py-5">
 
-<section id="merch-design" class=" bg-primary p-3 p-lg-5">
+    <div class="container-md d-flex flex-column" style="min-height: 50vh;">
 
-    <div class="container-md " style="height: 100%;" >
-        
-        <div class="row justify-content-center align-items-center" style="height: 100%;">
-            <div class="col-8 col-md-6 col-lg-4 text-center mx-3">
-                <img src="./Assets/imgs/merch-design.png" class="img-fluid" alt="">
+        <!-- TOP SPACER -->
+        <div class="flex-grow-1"></div>
+            
+        <div class="row gx-5 justify-content-center align-items-center"> 
+
+            <div class="col-7 col-lg-4 ">
+                <img src="./Assets/imgs/content system.png" alt="" class="img-fluid pt-5 pt-lg-0 pb-4">
             </div>
-            <div class="col-11 col-md-6 col-lg-6 text-center text-md-start mx-5">
-                <h1 class="display-4 fw-semibold text-white">Merch Design</h1>
-                <p class="fs-5 text-white">Custom graphics printed on quality products that blend commercial appeal and 
-                    artistic beauty, perfect for all your promoting needs. 
-                    <br><br> Shirts, Stickers, Mugs, Hats and More!</p>
-                    <a href="./portfolio.html#merchdesign" class="btn btn-white btn-lg text-primary fw-bold" type="button">
-                        See Our Work
-                    </a>            
+
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <p class="display-3 text-center text-lg-start pb-2">
+                    I build systems that keep your brand consistent and visible
+                </p>
+
             </div>
 
         </div>
 
-</section>
+        <!-- MIDDLE SPACER -->
+        <div class="flex-grow-1"></div>
 
-<!--END MERCH DESIGN SECTION-->
+        <div class="row justify-content-center g-4 pb-3">
 
-<!--ANIMATION SECTION-->
+            <!-- Content Creation -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
 
-<section id="animation" class=" p-3 p-lg-5">
+                    <p class="fs-5 fw-semibold mb-2">
+                        Content Creation
+                    </p>
 
-    <div class="container-md " style="height: 100%;" >
+                    <p class="fs-6 m-0">
+                        Design, video, and motion content built around your brand
+                    </p>
 
-        <div class="row justify-content-center align-items-center" style="height: 100%;">
-            <div class="col-8 col-md-6 col-lg-4 text-center mx-3">
-                <img class="img-fluid" src="./Assets/imgs/animation.png" alt="">
+                </div>
             </div>
-            <div class="col-11 col-md-6 col-lg-6 text-center text-md-start mx-5">
-                <h1 class="display-4 fw-semibold text-primary">Animation</h1>
-                <p class="fs-5">Engage your audience with inspiring animations and dynamic motion designs.
-                     <br> <br> 2D, 3D, Motion Graphics, and Character Animation!</p>
-                     <a href="./portfolio.html#animation" class="btn btn-primary btn-lg text-white fw-semibold" type="button">
-                        See Our Work
-                    </a>             </div>
+
+            <!-- Brand Consistency -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Brand Consistency
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Keeping your visuals and messaging aligned across every platform
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Strategy + Execution -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Strategy + Execution
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Clear direction paired with hands-on production and delivery
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Ongoing Support -->
+            <div class="col-10 col-md-6 col-lg-3">
+                <div class="glass-card p-3 text-center shadow-sm">
+
+                    <p class="fs-5 fw-semibold mb-2">
+                        Ongoing Support
+                    </p>
+
+                    <p class="fs-6 m-0">
+                        Continued creative help as your brand evolves and grows
+                    </p>
+
+                </div>
+            </div>
 
         </div>
+
     </div>
 
 </section>
+<!-- END SECTION 4 -->
 
-<!--END ANIMATION SECTION-->
+<section id="section5" class="py-5 lift-top lift-bottom bg-grid pill-wrap">
 
-<!--ABOUT ME SECTION-->
+    <div class="container-md d-flex flex-column justify-content-center pt-5 mt-5" style="min-height: 50vh;">
 
-<section id="about-me" class="bg-warning py-5 d-flex justify-content-center">
+        <div class="row justify-content-center g-4">
 
-    <div class="card border-0 col-11 col-lg-8 col-xxl-6 text-center my-3">
-        <div class="row m-3 d-flex align-items-center justify-content-center">
-            <img src="./Assets/imgs/profile pic.png" class="col-6 col-lg-3 pt-3 rounded-pill" alt="...">
+            <!-- FOUNDATIONS -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card w-100 text-center shadow py-5 px-4 fade-up">
+
+                    <div class="mb-4">
+                        <i class="bi bi-layout-text-window-reverse pricing-icon"></i>
+                    </div>
+
+                    <p class="fs-2 fw-bold mb-3">Brand & Website Foundations</p>
+
+                    <p class="fs-5 mb-4">
+                        For businesses that need a strong, professional online presence.
+                    </p>
+
+                    <p class="fs-4 fw-semibold">
+                        Custom projects starting around $2K–$5K
+                    </p>
+
+                    <p class="text-muted mt-3">
+                        Logo, branding, website design, and core digital setup.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- GROWTH SYSTEM -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card w-100 text-center shadow py-5 px-4 fade-up featured-card">
+
+                    <div class="mb-4">
+                        <i class="bi bi-graph-up-arrow pricing-icon"></i>
+                    </div>
+
+                    <p class="fs-2 fw-bold mb-3">Content & Growth Systems</p>
+
+                    <p class="fs-5 mb-4">
+                        For businesses that want consistent visibility and engagement.
+                    </p>
+
+                    <p class="fs-4 fw-semibold">
+                        Monthly retainers from $1.5K–$4K
+                    </p>
+
+                    <p class="text-muted mt-3">
+                        Social content, YouTube strategy, branding consistency, and ongoing creative support.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- FULL PARTNERSHIP -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="card w-100 text-center shadow py-5 px-4 fade-up">
+
+                    <div class="mb-4">
+                        <i class="bi bi-stars pricing-icon"></i>
+                    </div>
+
+                    <p class="fs-2 fw-bold mb-3">Full Creative Partnership</p>
+
+                    <p class="fs-5 mb-4">
+                        For brands that want design + web + content working together.
+                    </p>
+
+                    <p class="fs-4 fw-semibold">
+                        Custom scoped projects + ongoing support
+                    </p>
+
+                    <p class="text-muted mt-3">
+                        End-to-end branding, websites, and content systems built to scale with your business.
+                    </p>
+
+                </div>
+            </div>
+
         </div>
-        <div id="software-icons" class="row d-flex align-items-center justify-content-center">
-            <div class="m-1 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-04.svg" alt="">
-            </div>
-            <div class="m-1 col-2 col-lg-1 ">
-                <img src="./Assets/icons/icons-05.svg" alt="">
-            </div>
-            <div class="m-1 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-06.svg" alt="">
-            </div>
-            <div class="m-1 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-07.svg" alt="">
-            </div>
-            <div class="m-1 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-08.svg" alt="">
-            </div>
-            <div class="m-2 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-09.svg" alt="">
-            </div>
-            <div class="my-2 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-10.svg" alt="">
-            </div>
-            <div class="my-2 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-11.svg" alt="">
-            </div>
-            <div class="m-1 col-2 col-lg-1">
-                <img src="./Assets/icons/icons-12.svg" alt="">
-            </div>
-            <div class=" col-2 col-lg-1">
-                <img src="./Assets/icons/icons-13.svg" alt="">
-            </div>
-        </div>
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="card-body">
-                <h5 class="card-title">About the Artist</h5>
-                <p class="card-text mx-3 mx-lg-5 py-3"> Hi! I'm Steven Fenczik, founder of 
-                    Fenczik Studios LLC. <br> 
-                    I've had a passion for all things creative for as long as I can remember. 
-                    In 2023, after a decade of freelancing in art and design, I decided to 
-                    leverage my diverse skill set and establish Fenczik Studios LLC. At Fenczik 
-                    Studios, we specialize in crafting custom logos, responsive websites, unique 
-                    merchandise, and eye-catching animations for small businesses eager to stand 
-                    out and grow. I'm excited to learn about your amazing business and explore how 
-                    Fenczik Studios can help bring your vision to life.
+
+        <div class="row justify-content-center">
+            <div class="col-12 text-center py-5">
+                <p class="fs-4 text-muted pill-glow">
+                    Every project is tailored — pricing adjusts based on scope, not rigid packages.
                 </p>
             </div>
         </div>
 
-
     </div>
 
 </section>
 
-<!--END ABOUT ME SECTION-->
+<section class=" hero-section d-flex align-items-center hero-mini">
 
-<!--CONTACT SECTION-->
-<section class="bg-white">
-    <div class="container py-5">
-        <div class="text-center">
-            <h2>Every Business is Unique</h2>
-            <p class="lead">Looking to take your business' creative game to the next level?</p>
+    <!-- VIDEO -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./Assets/video/gradient2.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <!-- CONTENT (UNCHANGED) -->
+    <div class="container-md position-relative"> 
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="display-3 m-0 text-white py-3">
+                    Work that Stands Out.
+                </p>
+            </div>
         </div>
+    </div> 
+
+</section>
+
+
+<!--SECTION 6 : PROOF-->
+<section id="proof" class=" d-flex bg-grid align-items-center lift-bottom lift-top" style="min-height: 16vh;">
+    <div class="container-md">
         <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <button class="btn btn-primary btn-lg text-white fw-semibold" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                   Let's Talk
-                </button>
+            <div class="col-12 ">
             </div>
         </div>
     </div>
 </section>
+
+<section class="case-study-section bg-grid">
+    <div class="bg-gray border-bottom border-top border-gray2 border-4 py-2 py-md-5">
+
+        <div class="container-md">
+            <div class="col-12 text-center text-lg-start fade-up">
+                <p class="display-4 case-study-title">
+                    Mindful Moose Gardening
+                </p>
+            </div>
+        </div>
+
+        <div class="container-md py-5">
+
+            <div class="row justify-content-around align-items-center g-5">
+
+                <!-- TEXT -->
+                <div class="col-12 col-lg-4 order-2 order-lg-1">
+
+                    <div class="case-study-copy fade-up">
+
+                        <p class="case-study-label">
+                            Branding & Local Presence
+                        </p>
+
+                        <p class="fs-4 case-study-caption" id="moose-caption">
+                            Mindful Moose Gardening needed a brand that felt approachable, professional, and recognizable in a local market.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- CAROUSEL -->
+                <div class="col-12 col-lg-8 order-1 order-lg-2">
+
+                    <div id="moose-carousel"
+                        class="carousel slide carousel-fade shadow fade-up"
+                        data-bs-touch="false"
+                        data-bs-interval="15000">
+
+                        <div class="carousel-inner rounded">
+
+                            <div class="carousel-item active"
+                                data-caption="Mindful Moose Gardening needed a brand that felt approachable, professional, and recognizable in a local market. I developed a clean visual identity designed to build trust quickly across everything from signage to apparel.">
+
+                                <img src="./Assets/imgs/branding-moose1.png"
+                                    class="d-block w-100"
+                                    alt="Mindful Moose Branding">
+
+                            </div>
+
+                            <div class="carousel-item"
+                                data-caption="The branding system was designed to work consistently across business cards, shirts, hats, and lawn signs — helping establish a strong street-level presence throughout the community.">
+
+                                <img src="./Assets/imgs/branding-moose2.png"
+                                    class="d-block w-100"
+                                    alt="Mindful Moose Print Design">
+
+                            </div>
+
+                            <div class="carousel-item"
+                                data-caption="To support the new identity online, I created a streamlined website that matched the brand visually while making it easy for customers to learn about services and get in contact quickly.">
+
+                                <img src="./Assets/imgs/branding-moose3.png"
+                                    class="d-block w-100"
+                                    alt="Mindful Moose Website">
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#moose-carousel"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#moose-carousel"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="" class=" d-flex bg-grid align-items-center lift-bottom lift-top" style="min-height: 16vh;">
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <div class="col-12 ">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="case-study-section">
+    <div class="bg-gray border-bottom border-top border-gray2 border-4 py-2 py-md-5">
+
+        <div class="container-md">
+            <div class="col-12 text-center text-lg-start fade-up">
+                <p class="display-4 case-study-title">
+                    EyeOn Networks
+                </p>
+            </div>
+        </div>
+
+        <div class="container-md py-5">
+
+            <div class="row justify-content-around align-items-center g-5">
+
+                <div class="col-12 col-lg-4 order-2 order-lg-1">
+
+                    <div class="case-study-copy fade-up">
+
+                        <p class="case-study-label">
+                            Rebrand & Content Strategy
+                        </p>
+
+                        <p class="fs-4 case-study-caption" id="eyeon-caption">
+                            EyeOn Networks needed a more modern and cohesive digital presence.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-8 order-1 order-lg-2">
+
+                    <div id="eyeon-carousel"
+                        class="carousel slide carousel-fade shadow fade-up"
+                        data-bs-interval="15000">
+
+                        <div class="carousel-inner rounded">
+
+                            <div class="carousel-item active"
+                                data-caption="EyeOn Networks needed a more modern and cohesive digital presence. I redesigned the brand identity and website to create a cleaner, more professional experience.">
+
+                                <img src="./Assets/imgs/EyeOnNetworksLogo.png"
+                                    class="d-block w-100"
+                                    alt="EyeOn Networks Branding">
+
+                            </div>
+
+                            <div class="carousel-item"
+                                data-caption="The website was rebuilt with clarity and scalability in mind — improving navigation, visual consistency, and laying the groundwork for future marketing and content efforts.">
+
+                                <img src="./Assets/imgs/branding-eyeon2.png"
+                                    class="d-block w-100"
+                                    alt="EyeOn Networks Website">
+
+                            </div>
+
+                            <div class="carousel-item"
+                                data-caption="Beyond the rebrand, I’m helping develop a long-term video content system centered around consistent educational media and YouTube production.">
+
+                                <img src="./Assets/imgs/branding-eyeon3.png"
+                                    class="d-block w-100"
+                                    alt="EyeOn Networks Content Strategy">
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#eyeon-carousel"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#eyeon-carousel"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="" class=" d-flex bg-grid align-items-center lift-bottom lift-top" style="min-height: 16vh;">
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <div class="col-12 ">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="case-study-section bg-grid">
+    <div class="bg-gray border-bottom border-top border-gray2 border-4 py-2 py-md-5">
+
+        <div class="container-md">
+            <div class="col-12 text-center text-lg-start fade-up">
+                <p class="display-4 case-study-title">
+                    Stepping Stone Realty
+                </p>
+            </div>
+        </div>
+
+        <div class="container-md py-5">
+
+            <div class="row justify-content-around align-items-center g-5">
+
+                <div class="col-12 col-lg-4 order-2 order-lg-1">
+
+                    <div class="case-study-copy fade-up">
+
+                        <p class="case-study-label">
+                            Custom WordPress Development
+                        </p>
+
+                        <p class="fs-4 case-study-caption" id="steppingstone-caption">
+                            Stepping Stone Realty needed a website that felt personal, professional, and easy to navigate.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-8 order-1 order-lg-2">
+
+                    <div id="steppingstone-carousel"
+                        class="carousel slide carousel-fade shadow fade-up"
+                        data-bs-interval="15000">
+
+                        <div class="carousel-inner rounded">
+
+                            <div class="carousel-item active"
+                                data-caption="Stepping Stone Realty needed a website that felt personal, professional, and easy to navigate. I created a streamlined custom WordPress site tailored specifically to the client’s business.">
+
+                                <img src="./Assets/imgs/branding-steppingstone1.png"
+                                    class="d-block w-100"
+                                    alt="Stepping Stone Realty Homepage">
+
+                            </div>
+
+                            <div class="carousel-item"
+                                data-caption="Part of the project involved replacing an overly complicated setup filled with unnecessary add-ons and recurring costs. The new website is simpler to manage, more efficient, and built with future scalability in mind — allowing new features, listings, and content to be added over time without requiring a complete rebuild.">
+
+                                <img src="./Assets/imgs/branding-steppingstone2.png"
+                                    class="d-block w-100"
+                                    alt="Stepping Stone Realty Optimization">
+
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#steppingstone-carousel"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+
+                        </button>
+
+                        <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#steppingstone-carousel"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="" class=" d-flex bg-grid align-items-center lift-bottom lift-top" style="min-height: 16vh;">
+    <div class="container-md">
+        <div class="row justify-content-center">
+            <div class="col-12 ">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--END SECTION 6 : PROOF-->
+
+
+<section class="d-flex hero-section align-items-center hero-mini">
+
+    <!-- VIDEO -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./Assets/video/gradient2.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <!-- CONTENT (UNCHANGED) -->
+    <div class="container-md position-relative"> 
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="display-3 m-0 text-white py-3">
+                    Content designed to capture attention
+                </p>
+            </div>
+        </div>
+    </div> 
+
+</section>
+
+
+<!--SECTION 7 : REEL-->
+
+<section id="section7" class="bg-grid py-5 lift-top lift-bottom pill-wrap">
+
+    <div class="container-md">
+
+        <div class="row justify-content-center align-items-center" style="height: 100%;">
+
+
+            <div class="col-12 col-md-12 col-lg-12 text-md-start px-5 pill-glow">
+                <div class="row justify-content-center align-items-center" style="height: 100%;">
+                    <div class="col-12 col-lg-10 text-center m-5">
+                        
+                        <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/4j9ttUm-uqM?si=E3m9-32vGrAabI5R"
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; 
+                            encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-12 text-center py-4">
+                        <p class="fs-3">
+                            From motion graphics to social media content, <br>
+                            I create visuals designed to stop the scroll 
+                            and keep people engaged.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--END SECTION 7 : REEL-->
+
+
+
+<!-- SECTION 8 : ABOUT -->
+<section id="section8" class="hero-section py-5">
+
+    <!-- VIDEO -->
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./Assets/video/gradient2.mp4" type="video/mp4">
+    </video>
+
+    <!-- BLUE OVERLAY -->
+    <div class="hero-overlay"></div>
+
+    <div class="container d-flex justify-content-center align-items-center position-relative" style="min-height: 80vh;">
+
+        <!-- CENTERED GROUP -->
+        <div class="text-center" style="max-width: 800px;">
+
+            <div class=" border-3 py-5 shadow glass-card">
+
+                <h5 class="card-title fs-1 text-white">
+                    About Fenczik Studios
+                </h5>
+
+                <div class="card-body">
+                    <p class="card-text mx-3 mx-lg-5 py-3 fs-4 text-white"> 
+                        Fenczik Studios is a design studio built to help businesses communicate their value more clearly online.  
+                        <br><br>
+
+                        A lot of great companies don’t struggle because of their product or service — they struggle because their branding and content don’t reflect it properly. I work to close that gap.  
+                        <br><br>
+
+                        I focus on branding, websites, and content systems that are simple, consistent, and built for long-term growth — not just short-term appearance.
+                    </p>
+                </div>
+
+                <!-- ICONS -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-04.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-05.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-06.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-07.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-08.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/wordpress.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-10.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-11.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-12.svg" class="img-fluid" alt=""></div>
+                    <div class="m-1 col-2 col-lg-1"><img src="./Assets/icons/icons-13.svg" class="img-fluid" alt=""></div>
+                </div>
+
+                            <!-- CTA -->
+            <div class="mt-2">
+                <h2 class="m-5 text-white">
+                    Ready to turn your brand into a growth engine?
+                </h2>
+
+                <button class="btn btn-white btn-lg text-white fw-semibold glass-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#reg-modal">
+                    Book a Free Strategy Call
+                </button>
+            </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+<!--FOOTER-->
+
+<section id="footer" class="">
+    <div class="container-lg mt-4">
+        <div class="row justify-content-center text-center">
+            <div class="col-2 col-lg-1 me-3 me-sm-0" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                <a href="#contact" class="text-white">Contact</a>
+            </div>
+                        <div class="col-2 col-lg-1">
+                <a href="https://be8c3f-2.myshopify.com/" class="text-white">Store</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row mt-3">
+            <p class="text-white fw-semibold text-end text-center">
+                Colorado Springs, CO • steven@fenczikstudios.com •
+                <i class="bi bi-youtube"></i> @fenczikstudios
+            </p>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row mt-5">
+            <small class="text-white text-end pt-2">Website designed by Fenczik Studios</small>
+        </div>
+    </div>
+</section>
+
+<!--END FOOTER-->
+
+
+
+</section>
+
+
+
+
+
+
+
+<!--END SECTION 8 : ABOUT-->
 
 <!--MODAL POPUP-->
 <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-dialog" >
 
-        <div class="modal-content bg-primary" >
+        <div class="modal-content bg-primary shadow-lg" >
 
             <!--CONTACT FORM-->
 
             <section id="contact" class="d-flex" > 
-                <div class="container-lg py-4">
+                <div class="container-lg p-4">
                     <div class="text-center text-white">
                         <h1>GET IN TOUCH</h1>
                         <p class="lead text-light fs-4">Questions to ask? Fill out the form to contact us directly...</p>
@@ -305,14 +1046,21 @@
                                         <i class="bi bi-chat-right-dots-fill"></i>
                                     </span>
                                     <select class="form-select" id="subject" name="subject">
-                                        <option value="branding" selected>Branding</option>
-                                        <option value="merch-design" selected>Merch Design</option>
-                                        <option value="animation" selected>Animation</option>
-                                        <option value="commission" selected>Commissions</option>
-                                        <option value="other" selected>Other</option>                                 
+                                        <option value="ContentAndSocial" selected>Content & Social Media</option>
+                                        <option value="Branding" >Branding</option>
+                                        <option value="Website" >Website</option>
+                                        <option value="FullContentSystem" >Full Content System</option>
+                                        <option value="NotSureYet" >Not Sure Yet</option>                                 
                                     </select>
                                 </div>
-
+                                <div class="input-group mb-4">
+                                    <select class="form-select" name="budget">
+                                        <option selected>Estimated Monthly Budget</option>
+                                        <option>$1K-$2K/month</option>
+                                        <option>$2K-$4K/month</option>
+                                        <option>$4K+/month</option>
+                                    </select>
+                                </div>
 
                                 <div class="form-floating mb-4 mt-4">
                                     <textarea id="query" class="form-control" style="height: 140px;" name="message"></textarea>
@@ -320,7 +1068,7 @@
                                 </div>
 
                                 <div class="mb-4 text-center">
-                                    <button type="submit" class="btn btn-warning btn-lg text-white fw-semibold">Submit</button>
+                                    <button type="submit" class="btn glass-btn btn-lg text-white fw-semibold">Submit</button>
                                 </div>
                             </form>
 
@@ -337,39 +1085,11 @@
 <!--END CONTACT SECTION-->
 
 
-<!--FOOTER-->
 
-<section id="footer" class="py-5 bg-primary">
-    <div class="container-lg mt-4">
-        <div class="row justify-content-center text-center">
-            <div class="col-2 col-lg-1 me-4 me-sm-0">
-                <a href="#intro" class="text-white">Services</a>
-            </div>
-            <div class="col-2 col-lg-1 me-2 me-sm-0">
-                <a href="./index.html#about-me" class="text-white">About</a>
-            </div>
-            <div class="col-2 col-lg-1 me-3 me-sm-0" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                <a href="#contact" class="text-white">Contact</a>
-            </div>
-            <div class="col-2 col-lg-1">
-                <a href="./portfolio2.html" class="text-white">Art</a>
-            </div>
-            <div class="col-2 col-lg-1">
-                <a href="https://be8c3f-2.myshopify.com/" class="text-white">Store</a>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <p class="text-white fw-semibold text-end text-center">Colorado Springs, CO • steven@fenczikstudios.com • <i class="bi bi-instagram"></i> @fenczikstudios</p>
-    </div>
-    <div class="container-lg">
-        <div class="row mt-5">
-            <small class="text-white text-end pt-2">Website designed by Fenczik Studios</small>
-        </div>
-    </div>
-</section>
 
-<!--END FOOTER-->
+
+
+
 
 
 

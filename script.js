@@ -30,3 +30,59 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll(".fade-up").forEach(el => {
+    observer.observe(el);
+});
+
+
+
+const video = document.getElementById("heroVideo");
+video.playbackRate = .6; // half speed
+
+
+
+
+
+
+// ===============================
+// CASE STUDY CAPTION SWAP
+// ===============================
+
+function setupCaseStudy(carouselId, captionId) {
+
+    const carousel = document.getElementById(carouselId);
+    const caption = document.getElementById(captionId);
+
+    if (!carousel || !caption) return;
+
+    carousel.addEventListener('slide.bs.carousel', function (event) {
+
+        const nextSlide = event.relatedTarget;
+        const newCaption = nextSlide.dataset.caption;
+
+        caption.style.opacity = 0;
+
+        setTimeout(() => {
+            caption.textContent = newCaption;
+            caption.style.opacity = 1;
+        }, 200);
+
+    });
+
+}
+
+setupCaseStudy('moose-carousel', 'moose-caption');
+setupCaseStudy('eyeon-carousel', 'eyeon-caption');
+setupCaseStudy('steppingstone-carousel', 'steppingstone-caption');

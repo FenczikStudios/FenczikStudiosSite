@@ -4,25 +4,414 @@
 }
 */
 body {
+    padding-top: 0;
     touch-action: pan-y;
 }
 .bg-img {
     background-image: url(./Assets/imgs/abstractBG.png);
     background-size: cover;
 }
- #intro {
-    height: 50vh;
-    min-height: 600px;
-}
-@media (max-width: 768px) {
-    #intro {
-        height: 30vh;
-    }
-}
+
 .portfolio-container {
     display: flex;
     min-height: 500px;
 }
 #logos {
     min-height:300px;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.lift-top {
+    position: relative;
+}
+
+.lift-top::before {
+    content: "";
+    position: absolute;
+    top: -0px; /* reaches INTO previous section */
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.20),
+        rgba(0,0,0,0)
+    );
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+
+.lift-topHero {
+    position: relative;
+}
+
+.lift-topHero::before {
+    content: "";
+    position: absolute;
+    top: -0px; /* reaches INTO previous section */
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0)
+    );
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+
+.lift-bottom {
+    position: relative;
+}
+
+.lift-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* reaches INTO next section */
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.20),
+        rgba(0,0,0,0)
+    );
+
+    pointer-events: none;
+    z-index: 1;
+}
+.bg-grid {
+    background-image: url("./Assets/imgs/grid.png");
+    background-repeat: repeat;   /* this is the key */
+    background-size: auto;       /* keep original size */
+    background-position: 0 -10px;
+}
+
+
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-up:nth-child(1) { transition-delay: 0.1s; }
+.fade-up:nth-child(2) { transition-delay: 0.2s; }
+.fade-up:nth-child(3) { transition-delay: 0.3s; }
+
+/* Icon styling */
+.pricing-icon {
+    font-size: 2.5rem;
+    color: #0d6efd; /* change to your brand color */
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* Card base */
+.card {
+    position: relative;
+    border-radius: 1.7rem;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #e6e6e6;
+    border: 1px solid transparent;
+    border-color: #cbcbcb;
+    outline: 4px solid #f0f0f0;
+    outline-offset: -6px;
+
+    transition: 
+        transform 0.3s ease, 
+        box-shadow 0.3s ease;
+}
+
+
+/* Blue glow layer (your original, slightly refined) */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    border-radius: 1.5rem;
+    padding: 5px;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(13, 110, 253, 0.75),
+        transparent
+    );
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+
+    
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+
+/* Hover state */
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    /* stronger presence (this is what was missing) */
+    box-shadow: 0 25px 60px rgba(13, 110, 253, 0.15);
+}
+
+/* Activate glow */
+.card:hover::before {
+    opacity: 1;
+}
+
+
+/* Icon base (slightly more visible than before) */
+.pricing-icon {
+    font-size: 3.5rem;
+    color: rgba(13, 110, 253, 0.4);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Icon hover */
+.card:hover .pricing-icon {
+    transform: translateY(-4px) scale(1.1);
+    color: #0d6efd;
+}
+
+
+
+
+
+
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* thickness */
+
+    background: rgba(223, 227, 255, 0.25); /* adjust opacity here */
+
+    z-index: 2;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* thickness */
+
+    background: rgba(223, 227, 255, 0.25); /* adjust opacity here */
+
+    z-index: 2;
+}
+
+
+
+/* VIDEOS */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+/* OVERLAY */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 40, 120, 0.65); /* adjust tint */
+    z-index: 0;
+}
+
+/* CONTENT STAYS ABOVE */
+.hero-section .container-lg {
+    position: relative;
+    z-index: 2;
+}
+.custom-navbar {
+    background: rgba(112, 112, 112, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.section-video {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-mini {
+  position: relative;
+  min-height: 10vh;
+  overflow: hidden;
+}
+/* VIDEO */
+.section-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+.hero-mini .container-md {
+  position: relative;
+  z-index: 2;
+}
+/* OVERLAY */
+.section-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); /* adjust darkness */
+    z-index: 1;
+}
+
+/* CONTENT ABOVE VIDEO */
+.section-content {
+    position: relative;
+    z-index: 2;
+}
+.glass-btn {
+    background: rgba(255, 255, 255, 0.08); /* lighter, more glass-like */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+
+    padding: 0.75rem 1.75rem;
+
+    transition: all 0.3s ease;
+
+}
+
+/* HOVER (this is where the magic happens) */
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+    z-index: 20;
+}
+
+/* hover lift */
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.pill-wrap {
+    overflow: hidden; /* 🔑 stops page-wide overflow */
+}
+.pill-glow {
+    position: relative;
+    display: inline-block;
+    padding: 2rem 2rem;
+    border-radius: 60px;
+    background: white;
+    z-index: 1;
+}
+
+.pill-glow::before {
+    content: "";
+    position: absolute;
+    inset: -90px;
+    border-radius: inherit;
+    background: white;
+    filter: blur(80px);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* PROOF SECTION */
+
+.case-study-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    transform: translate(0, 30px);
+}
+
+.case-study-title::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 45%;
+    height: 2px;
+
+    background: #000000;
+    border-radius: 999px;
+
+    opacity: .85;
+}
+
+.case-study-copy {
+    max-width: 500px;
+}
+
+.case-study-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: .7;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.case-study-caption {
+    transition: opacity .25s ease;
+    min-height: 220px;
+}
+
+.carousel img {
+    object-fit: cover;
 }
